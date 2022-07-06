@@ -10,9 +10,12 @@ import 'package:moviex/utils/http_client.dart';
 import '../../fake/data.dart';
 import '../../fake/response.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  final client = await httpClient();
+void main() {
+  late Dio client;
+  setUp(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    client = await httpClient();
+  });
 
   group('Now Playing', () {
     group('Movie', () {
