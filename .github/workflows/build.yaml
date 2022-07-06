@@ -1,0 +1,28 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+      - name: flutter pub get
+        id: flutter-get
+        run: flutter pub get
+      - name: flutter test
+        id: flutter-test
+        run: flutter test
+      - name: Build APK
+        id: flutter-build
+        if: steps.flutter-test.outcome == 'success'
+        run: flutter build apk --release --build-number=$GITHUB_RUN_NUMBER
+      - uses: actions/upload-artifact@v3
+        with:
+          name: flutter apk binary
+          path: ./build/app/outputs/flutter-apk/app-release.apk

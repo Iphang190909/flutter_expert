@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "515213859972",
+    "project_id": "moviex-6710d",
+    "storage_bucket": "moviex-6710d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515213859972:android:c43a04ebe56f2f37eef6d1",
+        "android_client_info": {
+          "package_name": "com.example.moviex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515213859972-62ljtrimd0a5ssurma3vjqri4169pu5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1fnTzrJrI08wrmB-4MSRFLuinTh9sSvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515213859972-62ljtrimd0a5ssurma3vjqri4169pu5t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "515213859972-najg182emthshpm2kcm3otku7bedqgq6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.moviex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
