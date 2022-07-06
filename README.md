@@ -1,3 +1,5 @@
+[![build](https://github.com/Iphang190909/flutter_expert/actions/workflows/build.yaml/badge.svg)](https://github.com/Iphang190909/flutter_expert/actions/workflows/build.yaml)
+
 # moviex
 
 A new Flutter project.
